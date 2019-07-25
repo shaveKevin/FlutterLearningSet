@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-        home: ManiListViewDemo(title: 'Flutter学习demo',),
+        home: ManiListViewDemo(title: 'Flutter 学习',),
         debugShowCheckedModeBanner: false,
     );
   }
