@@ -35,10 +35,9 @@ https://github.com/Solido/awesome-flutter
 
 https://github.com/yang7229693/flutter-study
 
+系统全面学习flutter  作者：来自阿里
+
+https://juejin.im/post/5c8f8e62e51d456a0f23d0fe
 
 
 
-## Demo演示
-
-
-![演示demo](https://github.com/shaveKevin/FlutterLearningSet/blob/master/FlutterDemo.gif)
