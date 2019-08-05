@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class MyHomePage extends StatefulWidget {
   // MyHomePage({Key key, this.title}) : super(key: key);
   MyHomePage({this.title});
@@ -14,12 +15,35 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Column(
-        children: <Widget>[
-          renderImage(),
-          renderCenter(),
-        ],
-      ),
+      body: renderScrollviewBody(),
+    );
+  }
+
+  Widget renderColumn() {
+    return new Column(
+      children: <Widget>[
+        renderImage(),
+        renderCenter(),
+      ],
+    );
+  }
+
+  // 渲染scrollview
+  Widget renderScrollviewBody() {
+    return new CustomScrollView(
+      shrinkWrap: true,
+      slivers: <Widget>[
+        new SliverPadding(
+          padding: const EdgeInsets.all(10.0),
+          sliver: new SliverList(
+              delegate: new SliverChildListDelegate(
+            <Widget>[
+              renderImage(),
+              renderCenter(),
+            ],
+          )),
+        )
+      ],
     );
   }
 
