@@ -25,7 +25,6 @@ class _CirleWidgetPageState extends State<CirleWidgetPage> {
 Widget renderAll() {
   return new Column(
     children: <Widget>[
-      renderBody(),
       renderScrollviewBody(),
     ],
   );
